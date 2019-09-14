@@ -1,11 +1,13 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
+require('dotenv/config')
+
 module.exports = {
   devServer: {
     contentBase: './dist',
     inline: true,
-    port: 8001
+    port: process.env.PORT || 8001
   },
   devtool: 'inline-source-map',
   entry: './src/index.js',
