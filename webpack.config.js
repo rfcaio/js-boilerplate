@@ -23,7 +23,8 @@ const commonConfig = merge([
 ])
 
 const developmentConfig = merge([
-  parts.devServer({ port: process.env.PORT || 8001 })
+  parts.devServer({ port: process.env.PORT || 8001 }),
+  parts.useErrorOverlay()
 ])
 
 const productionConfig = merge([])
