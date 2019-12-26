@@ -1,3 +1,3 @@
 # About
 
-A simple boilerplate for JavaScript projects.
+> A simple boilerplate for JavaScript projects.
